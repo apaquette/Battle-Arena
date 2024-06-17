@@ -1,0 +1,58 @@
+<!doctype html>
+<!--
+   Name:	Alex Paquette
+   Date:	11/14/2021
+ -->
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Battle Arena</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/creatureClass.js"></script>
+  <script src="scripts/abilityClass.js"></script>
+  <script src="scripts/main.js"></script>
+  </head>
+  <body onload="setGame()">
+    <div class="content">
+      <div class="playerSide">
+        <div class="statusEffects">
+          <p id="playerName"></p>
+          <div class="healthBar">
+            <span style="width: 100%;" id="playerHP"></span>
+          </div>
+          <div class="statusIcons"></div>
+        </div>
+        <img id="playerImage" src=""/>
+        <div class="playerOptions" id="playerOptions"></div>
+      </div>
+      <div class="howToPlay">
+        <h3 id="score">Score: 0</h3>
+        <div class="dropdown">
+          <button class="dropbtn">How to Play</button>
+          <div class="dropdown-content">
+            <li>Welcome to the Battle Arena</li>
+            <li>Select an ability to use on the monster</li>
+            <li>The monster will then use one if its own on you</li>
+            <li>Defeat the monster before it defeats you</li>
+            <li>Your score is a proportion of how quickly you kill the monster plus how much health you have left</li>
+          </div>
+        </div>
+      </div>
+      <div class="monsterSide">
+        <div class="statusEffects">
+          <p id="monsterName"></p>
+          <div class="healthBar">
+            <span style="width: 100%;" id="monsterHP"></span>
+          </div>
+          <div class="statusIcons"></div>
+        </div>
+        <img id="monsterImage" src=""/>
+      </div>
+      <div class="activityLog">
+
+        <h1>Battle Log</h1>
+        <div id="log"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+html{
+      background-color: grey;
+    }
+    .content{
+      width: 100%;
+      height: 800px;
+      display: flex;
+      flex-flow: row;
+
+      background-image: url("art/forest.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      color: white;
+    }
+
+    .playerSide, .monsterSide{
+      width: 35%;
+      display: flex;
+      flex-flow: column;
+    }
+    .playerSide{
+      align-items: flex-start;
+    }
+    .monsterSide{
+      align-items: flex-end;
+    }
+
+    .activityLog{
+      width: 20%;
+
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      background: rgba(0,0,0, 0.5);
+      border: 2px solid black;
+      overflow: scroll;
+    }
+
+    .statusEffects{
+      background: rgba(0,0,0, 0.6);
+      display: flex;
+      width: 100%;
+      flex-flow: column;
+    }
+
+    .statusIcons{
+      display: flex;
+      width: 100%;
+      flex-flow: row;
+      flex-wrap: wrap;
+      margin-top: 3%;
+      font-size: 110%;
+    }
+
+    .monsterSide .statusIcons{
+      flex-flow: row-reverse;
+    }
+
+    .statusIcons p{
+      margin: 0 0 0 0;
+    }
+    .statusIcon{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      margin: 0px 2%;
+    }
+
+    .statusIcon img{
+      width: 25px;
+    }
+
+    img{
+      width: 50%;
+    }
+
+    .playerSide .statusEffects{
+      align-items: flex-start;
+      padding-left: 3%;
+    }
+    .monsterSide .statusEffects{
+      align-items: flex-end;
+      padding-right: 3%;
+    }
+    .playerOptions{
+      width: 100%;
+      align-self: center;
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+    }
+    .playerOptions *{
+      margin: 1% 1% 1% 1%;
+    }
+    /*Credit: https://css-tricks.com/css3-progress-bars/*/
+    .healthBar{
+      width: 70%;
+      height: 5px;
+      position: relative;
+      display: flex;
+      flex-flow: row;
+      background: #555;
+      border-radius: 10px;
+      padding: 5px;
+      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    }
+    .healthBar > span {
+      align-self: flex-end;
+      display: block;
+      height: 100%;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: rgb(43,194,83);
+      background-image: linear-gradient(
+        center bottom,
+        rgb(43,194,83) 37%,
+        rgb(84,240,84) 69%
+      );
+      box-shadow:
+        inset 0 2px 9px  rgba(255,255,255,0.3),
+        inset 0 -2px 6px rgba(0,0,0,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /*credit: https://www.w3schools.com/howto/howto_css_dropdown.asp*/
+    /* Dropdown Button */
+    .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      color: white;
+      position: absolute;
+      background-color: rgba(0,0,0,0.5);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+    .howToPlay{
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      height: 16%;
+      width: 10%;
+    }
