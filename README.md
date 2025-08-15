@@ -1,5 +1,5 @@
 # Battle Arena
-> **Note:** This project was completed as part of my coursework for **Web Programming and Client Framework** at **Canadore College** in **2021**.
+> **Note:** This project was completed as part of my coursework for **Web Programming Client and Framework** at **Canadore College** in **2021**.
 > It may not reflect my current coding practices or skill level.
 
 
